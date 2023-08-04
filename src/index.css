@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-layout header {
+  background-color: red;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main-layout .container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: calc(100vh - 75px);
+}
+.main-layout aside {
+  background-color: #00E0FF;
+}
+.main-layout footer {
+  background-color: #D9D9D9;
+  min-height: 25px;
+}
+
+.blog-layout header {
+  background-color: #4664FF;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.blog-layout main {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  height: calc(100vh - 55px);
+}
+.blog-layout footer {
+  background-color: #D9D9D9;
+  min-height: 25px;
+}
+
+.product-header {
+  min-height: 25px;
+  background-color: blueviolet;
+}
