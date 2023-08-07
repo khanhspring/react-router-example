@@ -5,6 +5,7 @@ export default function MainLayout() {
     <div className="main-layout">
       <header>
         <Link to="/product">Sản phẩm</Link>
+        <Link to="/users">Người dùng</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/blog">Blog</Link>

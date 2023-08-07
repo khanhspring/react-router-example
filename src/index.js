@@ -12,6 +12,8 @@ import Product from './pages/product/Product';
 import Blog from './pages/blog/Blog';
 import BlogLayout from './layouts/BlogLayout';
 import Products from './pages/product/Products';
+import UserPage from './pages/user/UserPage';
+import Users from './pages/user/Users';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,16 @@ const router = createBrowserRouter([
             element: <ProductDetail />,
           },
         ]
+      },
+      {
+        path: "/users",
+        element: <UserPage />,
+        children: [
+          {
+            path: "",
+            element: <Users />,
+          },
+        ]
       }
     ]
   },
@@ -58,9 +70,7 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
